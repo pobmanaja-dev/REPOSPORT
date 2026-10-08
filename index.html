@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จองสนามฟุตบอล</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ส่วนหัวและเมนู -->
+  <header class="site-header">
+    <h1 class="logo">สนามฟุตบอลเมืองมหา</h1>
+    <nav>
+      <a href="#fields">สนาม</a>
+      <a href="#prices">ราคา</a>
+      <a href="#booking">จองสนาม</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ส่วนต้อนรับ -->
+    <section class="hero">
+      <h2>จองสนามฟุตบอลหญ้าเทียม<br>เลือกวันและเวลาที่ว่างได้เลย</h2>
+      <p>เปิดทุกวัน 16:00 - 23:00 น. มีไฟส่องสว่างและที่จอดรถ</p>
+      <a class="button" href="#booking">จองสนามตอนนี้</a>
+    </section>
+
+    <!-- รายละเอียดสนาม -->
+    <section id="fields" class="content">
+      <h2>สนามของเรา</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>สนาม A</h3>
+          <p>ขนาด 5 คน เหมาะกับการเตะสนุกกับเพื่อน</p>
+        </article>
+        <article class="card">
+          <h3>สนาม B</h3>
+          <p>ขนาด 7 คน หญ้าเทียมใหม่ มีที่นั่งข้างสนาม</p>
+        </article>
+        <article class="card">
+          <h3>สนาม C</h3>
+          <p>ขนาด 11 คน ใช้จัดแข่งขันระหว่างคณะหรือชมรม</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ตารางราคา -->
+    <section id="prices" class="content">
+      <h2>อัตราค่าเช่า (ต่อชั่วโมง)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>สนาม</th>
+            <th>16:00 - 18:00</th>
+            <th>18:00 - 23:00</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>สนาม A (5 คน)</td>
+            <td>300 บาท</td>
+            <td>500 บาท</td>
+          </tr>
+          <tr>
+            <td>สนาม B (7 คน)</td>
+            <td>500 บาท</td>
+            <td>800 บาท</td>
+          </tr>
+          <tr>
+            <td>สนาม C (11 คน)</td>
+            <td>800 บาท</td>
+            <td>1,200 บาท</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ฟอร์มจองสนาม -->
+    <section id="booking" class="content">
+      <h2>จองสนาม</h2>
+      <form class="booking-form">
+        <label for="name">ชื่อผู้จอง</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">เบอร์โทรศัพท์</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="field">เลือกสนาม</label>
+        <select id="field" name="field">
+          <option>สนาม A (5 คน)</option>
+          <option>สนาม B (7 คน)</option>
+          <option>สนาม C (11 คน)</option>
+        </select>
+
+        <label for="date">วันที่</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">เวลาเริ่ม</label>
+        <select id="time" name="time">
+          <option>16:00</option>
+          <option>17:00</option>
+          <option>18:00</option>
+          <option>19:00</option>
+          <option>20:00</option>
+          <option>21:00</option>
+          <option>22:00</option>
+        </select>
+
+        <label for="hours">จำนวนชั่วโมง</label>
+        <input type="number" id="hours" name="hours" min="1" max="3" value="1">
+
+        <button type="submit" class="button">ยืนยันการจอง</button>
+      </form>
+    </section>
+
+    <!-- ติดต่อ -->
+    <section id="contact" class="content">
+      <h2>ติดต่อเรา</h2>
+      <p>โทร 080-000-0000 | LINE: @footballfield</p>
+      <p>ที่อยู่: ใกล้มหาวิทยาลัย อำเภอเมือง จังหวัดมหาสารคาม</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>สนามฟุตบอลเมืองมหา | เปิดทุกวัน 16:00 - 23:00 น.</p>
+  </footer>
+
+</body>
+</html>
